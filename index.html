@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TW Coming Soon | Free Tailwindcss theme by Fyrestrap</title>
+  <title>TW Coming Soon | Jimenez Produce LLC</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,15 +50,21 @@
 z-index: -1; /* Ensure the video covers the entire header */
     }
 
-    /* Other styles for your content */
-    .w-full {
-        text-align: center;
-        color: white; /* Text color, adjust as needed */
-    }
-	#logo{
-	vertical
+       /* Styles for larger screens (e.g., desktop) */
+#logo {
+    width: 100px; /* Adjust the width for desktop */
+    height: auto; /* Adjust the height for desktop */
 }
-    /* Rest of your styles... */
+       /* Media query for screens with a maximum width of 640px (typical for mobile devices) */
+@media (max-width: 640px) {
+    #logo {
+        max-width: 100%; /* Ensure the logo doesn't exceed its container width */
+        height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+        width: auto; /* Allow the width to adjust automatically */
+    }
+}
+
+
 </style>
   
 </head>
@@ -67,8 +73,7 @@ z-index: -1; /* Ensure the video covers the entire header */
 
   
   <!-- Header -->
- <!-- <header class="w-full bg-[url('assets/img/Jim.MP4')] bg-cover bg-bottom">  
-<!-- Header -->
+
 <header class="w-full">
     <!-- Video Background -->
     <video autoplay muted loop id="video-bg">
@@ -78,7 +83,7 @@ z-index: -1; /* Ensure the video covers the entire header */
 
     <div class="w-full min-h-screen md:w-1/2 bg-gradient-to-b from-gray-900/90 to-gray-900/95 p-10 flex">
 <div >
-<img id="logo" src="assets/img/jimphoto_2023-09-29_13-25-25.png" height="100px" width="100px">
+ <img id="logo" src="assets/img/jimphoto_2023-09-29_13-25-25.png" alt="Logo" class="h-auto md:h-48 w-full mx-auto md:mx-0 md:mr-0 md:ml-auto md:mt-0">
 </div>
 
       <div class="w-full text-center my-auto">
